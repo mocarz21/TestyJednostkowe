@@ -5,7 +5,7 @@ export const convertPLNToUSD = (PLN) => {
   
   if(PLN < 0){ 
 
-    return 0
+    return 'wrong value'
   
   }else if(typeof(PLN)=== 'object'){
     

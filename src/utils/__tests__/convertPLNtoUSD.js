@@ -26,8 +26,8 @@ describe('ConvertPLNtoUSD', () => {
     expect(convertPLNToUSD()).toBeNaN();
   })
   it('should return 0 when input is lower than 0',()=>{
-    expect(convertPLNToUSD(-1)).toBe(0);
-    expect(convertPLNToUSD(-10)).toBe(0);
-    expect(convertPLNToUSD(-25)).toBe(0);
+    expect(convertPLNToUSD(-1)).toBe('wrong value');
+    expect(convertPLNToUSD(-10)).toBe('wrong value');
+    expect(convertPLNToUSD(-25)).toBe('wrong value');
   });
 });
